@@ -1,0 +1,15 @@
+{
+  "short_name": "イジンカウンター",
+  "name": "イジンカウンター",
+  "icons": [
+    {
+      "src": "vite.png",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": "https://sweetpotato.github.io/ijinden-counter/",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}
