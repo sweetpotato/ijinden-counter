@@ -1,6 +1,6 @@
 .grid-counter {
   display: grid;
-  grid-template-columns: 66% 17% 17%;
+  grid-template-columns: 83% 17%;
   grid-template-rows: 25% 25% 25% 25%;
   height: 100vh;
   width: 100vw;
@@ -57,47 +57,6 @@
   z-index: 2;
 }
 
-.box-summon-max-background-upper {
-  color: white;
-  align-items: start;
-  background: linear-gradient(#b02a37, #842029);
-  grid-column: 2;
-  grid-row: 1 / 2;
-}
-
-.box-summon-max-background-lower {
-  color: white;
-  align-items: end;
-  background: linear-gradient(#842029, #58151c);
-  grid-column: 2;
-  grid-row: 2 / 3;
-}
-
-.box-summon-max-value {
-  align-items: center;
-  color: white;
-  font-size: 5vh;
-  grid-column: 2;
-  grid-row: 1 / 3;
-  z-index: 1;
-}
-
-.box-summon-max-value > div > span {
-  vertical-align: 10%;
-}
-
-.box-summon-max-plus {
-  grid-column: 2;
-  grid-row: 1 / 2;
-  z-index: 2;
-}
-
-.box-summon-max-minus {
-  grid-column: 2;
-  grid-row: 2 / 3;
-  z-index: 2;
-}
-
 /* マリョク配置権 */
 .box-charge-current-background-upper {
   align-items: start;
@@ -137,60 +96,11 @@
   z-index: 2;
 }
 
-.box-charge-max-background-upper {
-  align-items: start;
-  color: white;
-  background: linear-gradient(#146c43, #0f5132);
-  grid-row: 3;
-  grid-column: 2;
-}
-
-.box-charge-max-background-lower {
-  align-items: end;
-  color: white;
-  background: linear-gradient(#0f5132, #0a3622);
-  grid-row: 4;
-  grid-column: 2;
-}
-
-.box-charge-max-value {
-  align-items: center;
-  color: white;
-  font-size: 5vh;
-  grid-column: 2;
-  grid-row: 3 / 5;
-  z-index: 1;
-}
-
-.box-charge-max-value > div > span {
-  vertical-align: 10%;
-}
-
-.box-charge-max-plus {
-  grid-row: 3 / 4;
-  grid-column: 2;
-  z-index: 2;
-}
-
-.box-charge-max-minus {
-  grid-row: 4 / 5;
-  grid-column: 2;
-  z-index: 2;
-}
-
 /* その他 */
 .box-reset {
   align-items: center;
   background-color: #0dcaf0;
   font-size: 5vh;
-  grid-row: 1 / 4;
-  grid-column: 3;
-}
-
-.box-dispose {
-  align-items: center;
-  background-color: #ffc107;
-  font-size: 5vh;
-  grid-row: 4;
-  grid-column: 3;
+  grid-row: 1 / 5;
+  grid-column: 2;
 }
