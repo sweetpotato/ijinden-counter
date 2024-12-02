@@ -2,8 +2,8 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [currentSummon, setCurrentSummon] = useState(1)
-  const [currentCharge, setCurrentChaege] = useState(1)
+  const [summon, setSummon] = useState(1)
+  const [charge, setChaege] = useState(1)
 
   const handleClickPlus = (value, setValue) => {
     if (value >= 99) {
@@ -19,66 +19,66 @@ function App() {
     setValue(value - 1)
   }
 
-  const handleClickSummonCurrentPlus = () => {
-    handleClickPlus(currentSummon, setCurrentSummon)
+  const handleClickSummonPlus = () => {
+    handleClickPlus(summon, setSummon)
   }
 
-  const handleClickSummonCurrentMinus = () => {
-    handleClickMinus(currentSummon, setCurrentSummon)
+  const handleClickSummonMinus = () => {
+    handleClickMinus(summon, setSummon)
   }
 
-  const handleClickChargeCurrentPlus = () => {
-    handleClickPlus(currentCharge, setCurrentChaege)
+  const handleClickChargePlus = () => {
+    handleClickPlus(charge, setChaege)
   }
 
-  const handleClickChargeCurrentMinus = () => {
-    handleClickMinus(currentCharge, setCurrentChaege)
+  const handleClickChargeMinus = () => {
+    handleClickMinus(charge, setChaege)
   }
 
   const handleRefresh = () => {
-    setCurrentSummon(1)
-    setCurrentChaege(1)
+    setSummon(1)
+    setChaege(1)
   }
 
   return (
     <>
       <div className="grid-counter">
         {/* イジン召喚権 */}
-        <div className="box-summon-current-background-upper">
+        <div className="box-summon-background-upper">
           <div>
             <span>+</span>
           </div>
         </div>
-        <div className="box-summon-current-background-lower">
+        <div className="box-summon-background-lower">
           <div>
             <span>-</span>
           </div>
         </div>
-        <div className="box-summon-current-value">
+        <div className="box-summon-value">
           <div>
-            <span>{currentSummon}</span>
+            <span>{summon}</span>
           </div>
         </div>
-        <button className="box-summon-current-plus" onClick={handleClickSummonCurrentPlus}></button>
-        <button className="box-summon-current-minus" onClick={handleClickSummonCurrentMinus}></button>
+        <button className="box-summon-plus" onClick={handleClickSummonPlus}></button>
+        <button className="box-summon-minus" onClick={handleClickSummonMinus}></button>
         {/* マリョク配置権 */}
-        <div className="box-charge-current-background-upper">
+        <div className="box-charge-background-upper">
           <div>
             <span>+</span>
           </div>
         </div>
-        <div className="box-charge-current-background-lower">
+        <div className="box-charge-background-lower">
           <div>
             <span>-</span>
           </div>
         </div>
-        <div className="box-charge-current-value">
+        <div className="box-charge-value">
           <div>
-            <span>{currentCharge}</span>
+            <span>{charge}</span>
           </div>
         </div>
-        <button className="box-charge-current-plus" onClick={handleClickChargeCurrentPlus}></button>
-        <button className="box-charge-current-minus" onClick={handleClickChargeCurrentMinus}></button>
+        <button className="box-charge-plus" onClick={handleClickChargePlus}></button>
+        <button className="box-charge-minus" onClick={handleClickChargeMinus}></button>
         {/* その他 */}
         <button className="box-reset" onClick={handleRefresh}>🔁</button>
       </div>

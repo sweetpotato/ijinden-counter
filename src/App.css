@@ -19,21 +19,21 @@
 }
 
 /* イジン召喚権 */
-.box-summon-current-background-upper {
+.box-summon-background-upper {
   align-items: start;
   background: linear-gradient(#f1aeb5, #ea868f);
   grid-column: 1;
   grid-row: 1 / 2;
 }
 
-.box-summon-current-background-lower {
+.box-summon-background-lower {
   align-items: end;
   background: linear-gradient(#ea868f, #e35d6a);
   grid-column: 1;
   grid-row: 2 / 3;
 }
 
-.box-summon-current-value {
+.box-summon-value {
   align-items: center;
   font-size: 25vh;
   grid-column: 1;
@@ -41,38 +41,38 @@
   z-index: 1;
 }
 
-.box-summon-current-value > div > span {
+.box-summon-value > div > span {
   vertical-align: 10%;
 }
 
-.box-summon-current-plus {
+.box-summon-plus {
   grid-column: 1;
   grid-row: 1 / 2;
   z-index: 2;
 }
 
-.box-summon-current-minus {
+.box-summon-minus {
   grid-column: 1;
   grid-row: 2 / 3;
   z-index: 2;
 }
 
 /* マリョク配置権 */
-.box-charge-current-background-upper {
+.box-charge-background-upper {
   align-items: start;
   background: linear-gradient(#a3cfbb, #75b798);
   grid-column: 1;
   grid-row: 3 / 4;
 }
 
-.box-charge-current-background-lower {
+.box-charge-background-lower {
   align-items: end;
   background: linear-gradient(#75b798, #479f76);
   grid-column: 1;
   grid-row: 4 / 5;
 }
 
-.box-charge-current-value {
+.box-charge-value {
   align-items: center;
   font-size: 25vh;
   grid-row: 3 / 5;
@@ -80,17 +80,17 @@
   z-index: 1;
 }
 
-.box-charge-current-value > div > span {
+.box-charge-value > div > span {
   vertical-align: 10%;
 }
 
-.box-charge-current-plus {
+.box-charge-plus {
   grid-row: 3 / 4;
   grid-column: 1;
   z-index: 2;
 }
 
-.box-charge-current-minus {
+.box-charge-minus {
   grid-row: 4 / 5;
   grid-column: 1;
   z-index: 2;
