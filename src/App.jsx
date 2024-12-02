@@ -53,6 +53,9 @@ function App() {
           <div>
             <span>+</span>
           </div>
+          <div>
+            <span>イジン召喚権</span>
+          </div>
         </div>
         <div className="box-summon-background-lower">
           <div>
@@ -70,6 +73,9 @@ function App() {
         <div className="box-charge-background-upper">
           <div>
             <span>+</span>
+          </div>
+          <div>
+            <span>マリョク配置権</span>
           </div>
         </div>
         <div className="box-charge-background-lower">
