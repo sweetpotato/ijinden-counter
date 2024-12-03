@@ -49,14 +49,14 @@ function App() {
     <>
       <div className={`grid-counter ${pulledUp ? 'pulled-up' : 'full-screen'}`}>
         {/* イジン召喚権 */}
-        <div className="box-summon-background-upper">
+        <div className="box-summon-background-upper box-upper">
           <div>+</div>
           <div>イジン召喚権</div>
         </div>
-        <div className="box-summon-background-lower">
+        <div className="box-summon-background-lower box-lower">
           <div>-</div>
         </div>
-        <div className="box-summon-value">
+        <div className="box-summon-value box-value">
           <div>
             {/* vertical-align のために span が必要 */}
             <span>{summon}</span>
@@ -65,14 +65,14 @@ function App() {
         <button className="box-summon-plus" onClick={handleClickSummonPlus}></button>
         <button className="box-summon-minus" onClick={handleClickSummonMinus}></button>
         {/* マリョク配置権 */}
-        <div className="box-charge-background-upper">
+        <div className="box-charge-background-upper box-upper">
           <div>+</div>
           <div>マリョク配置権</div>
         </div>
-        <div className="box-charge-background-lower">
+        <div className="box-charge-background-lower box-lower">
           <div>-</div>
         </div>
-        <div className="box-charge-value">
+        <div className="box-charge-value box-value">
           <div>
             {/* vertical-align のために span が必要 */}
             <span>{charge}</span>
@@ -81,8 +81,8 @@ function App() {
         <button className="box-charge-plus" onClick={handleClickChargePlus}></button>
         <button className="box-charge-minus" onClick={handleClickChargeMinus}></button>
         {/* その他 */}
-        <button className="box-toggle" onClick={handleToggle}>{pulledUp ? '⬇️' : '⬆️'}</button>
-        <button className="box-reset" onClick={handleRefresh}>🔁</button>
+        <button className="box-toggle box-side" onClick={handleToggle}>{pulledUp ? '⬇️' : '⬆️'}</button>
+        <button className="box-reset box-side" onClick={handleRefresh}>🔁</button>
       </div>
     </>
   )
