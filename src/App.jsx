@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   const [summon, setSummon] = useState(1)
-  const [charge, setChaege] = useState(1)
+  const [charge, setCharge] = useState(1)
   const [pulledUp, setPulledUp] = useState(false)
 
   const handleClickPlus = (value, setValue) => {
@@ -29,16 +29,16 @@ function App() {
   }
 
   const handleClickChargePlus = () => {
-    handleClickPlus(charge, setChaege)
+    handleClickPlus(charge, setCharge)
   }
 
   const handleClickChargeMinus = () => {
-    handleClickMinus(charge, setChaege)
+    handleClickMinus(charge, setCharge)
   }
 
   const handleRefresh = () => {
     setSummon(1)
-    setChaege(1)
+    setCharge(1)
   }
 
   const handleToggle = () => {
