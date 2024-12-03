@@ -49,6 +49,8 @@ function App() {
     <>
       <div className={`grid-counter ${pulledUp ? 'pulled-up' : 'full-screen'}`}>
         {/* イジン召喚権 */}
+        <button className="box-summon-plus box-button" onClick={handleClickSummonPlus}></button>
+        <button className="box-summon-minus box-button" onClick={handleClickSummonMinus}></button>
         <div className="box-summon-background-upper box-upper">
           <div>+</div>
           <div>イジン召喚権</div>
@@ -62,9 +64,9 @@ function App() {
             <span>{summon}</span>
           </div>
         </div>
-        <button className="box-summon-plus" onClick={handleClickSummonPlus}></button>
-        <button className="box-summon-minus" onClick={handleClickSummonMinus}></button>
         {/* マリョク配置権 */}
+        <button className="box-charge-plus box-button" onClick={handleClickChargePlus}></button>
+        <button className="box-charge-minus box-button" onClick={handleClickChargeMinus}></button>
         <div className="box-charge-background-upper box-upper">
           <div>+</div>
           <div>マリョク配置権</div>
@@ -78,8 +80,6 @@ function App() {
             <span>{charge}</span>
           </div>
         </div>
-        <button className="box-charge-plus" onClick={handleClickChargePlus}></button>
-        <button className="box-charge-minus" onClick={handleClickChargeMinus}></button>
         {/* その他 */}
         <button className="box-toggle box-side" onClick={handleToggle}>{pulledUp ? '⬇️' : '⬆️'}</button>
         <button className="box-reset box-side" onClick={handleRefresh}>🔁</button>
