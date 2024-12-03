@@ -50,20 +50,15 @@ function App() {
       <div className={`grid-counter ${pulledUp ? 'pulled-up' : 'full-screen'}`}>
         {/* イジン召喚権 */}
         <div className="box-summon-background-upper">
-          <div>
-            <span>+</span>
-          </div>
-          <div>
-            <span>イジン召喚権</span>
-          </div>
+          <div>+</div>
+          <div>イジン召喚権</div>
         </div>
         <div className="box-summon-background-lower">
-          <div>
-            <span>-</span>
-          </div>
+          <div>-</div>
         </div>
         <div className="box-summon-value">
           <div>
+            {/* vertical-align のために span が必要 */}
             <span>{summon}</span>
           </div>
         </div>
@@ -71,20 +66,15 @@ function App() {
         <button className="box-summon-minus" onClick={handleClickSummonMinus}></button>
         {/* マリョク配置権 */}
         <div className="box-charge-background-upper">
-          <div>
-            <span>+</span>
-          </div>
-          <div>
-            <span>マリョク配置権</span>
-          </div>
+          <div>+</div>
+          <div>マリョク配置権</div>
         </div>
         <div className="box-charge-background-lower">
-          <div>
-            <span>-</span>
-          </div>
+          <div>-</div>
         </div>
         <div className="box-charge-value">
           <div>
+            {/* vertical-align のために span が必要 */}
             <span>{charge}</span>
           </div>
         </div>
