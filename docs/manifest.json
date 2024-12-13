@@ -3,9 +3,14 @@
   "name": "イジンカウンター",
   "icons": [
     {
-      "src": "vite.png",
-      "type": "image/svg+xml",
-      "sizes": "any"
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "https://sweetpotato.github.io/ijinden-counter/",
